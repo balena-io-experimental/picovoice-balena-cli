@@ -1,0 +1,20 @@
+version: "2"
+services:
+  picvoice-cli:
+    restart: always
+    privileged: true
+    labels:
+      io.balena.features.kernel-modules: 1
+    devices:
+      - /dev/snd
+    network_mode: host
+    build:
+      context: .
+      dockerfile: Dockerfile.template
+
+  go-cli:
+    restart: always
+    privileged: true
+    network_mode: host
+    image: ghcr.io/balena-community/go-cli:0.0.3
+    command: -api

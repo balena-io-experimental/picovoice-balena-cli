@@ -1,0 +1,31 @@
+name: Picovoice balena CLI demo
+description: >-
+  [Picovoice](https://picovoice.ai) is an end-to-end platform for adding voice to anything. This repository provides an example of running Picovoice on a Raspberry Pi using [balena.io](https://balena.io).
+joinable: false
+type: sw.application
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: "https://github.com/maggie0002/picovoice-balena-cli"
+  logo:
+    type: blob.asset
+    data:
+      url: "https://github.com/maggie0002/picovoice-balena-cli/raw/main/logo.png"
+post-provisioning: >-
+  [Picovoice](https://picovoice.ai) is a platform for adding your own customised voice control to your product. It allows complete control over the voice commands your device listens for, and the actions it takes in response, all wrapped in an easy to use web interface and generous free tier account.
+
+
+  This app provides an example of running Picovoice on a Raspberry Pi 4 using [balena.io](https://balena.io). It wraps the balena `scan` CLI command to allow listing of devices on your network and some of the configurations of those devices. 
+
+
+  It is designed as a demo and starter project to use Picovoice and instructions on how to build it for your own uses are included in the GitHub repo.
+
+
+  To install and use this app, be sure to checkout the docs in the GitHub repo where there is information on some custom configuration required. 
+
+data:
+  defaultDeviceType: raspberrypi4-64
+  supportedDeviceTypes:
+    - raspberrypi4-64
+  
