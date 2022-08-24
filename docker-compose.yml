@@ -16,5 +16,5 @@ services:
     restart: always
     privileged: true
     network_mode: host
-    image: ghcr.io/balena-community/go-cli:0.0.3
+    image: ghcr.io/balena-community/go-cli:0.0.4
     command: -api
